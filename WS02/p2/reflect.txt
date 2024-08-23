@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Hanbi Gong
+Student ID#: 111932224
+Email      : hgong12@myseneca.ca
+Section    : IPC 144
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. 
+In Price1, I store 17.96 as a float variable. I use the %f as a formatting specifier to show the result. However, %f is interpreted as a double in the C language. So even though 17.96 in Price1 is stored in float variable, it is converted to double format. This results makes a rounding error, resulting in 17.959999.
+Price 2.3.4 All other values are correct.  		
+The Price2 variable is declared as a double and is printed using the %lf formatting specifier, which is more accurate.
+The Price3 variable is also declared as a double and printed using the %f formatting specifier, so it has an exact value.
+The Price4 variable is declared as a double and is output using the %1f formatting specifier, which gives an accurate representation of 17.98 to one decimal place.
+
+2.
+1) cast and promotion happen.
+In money / 100.0, money is an int type and 100.0 is a double type. 
+In this case, the int is implicitly cast to a double, and the division operation is performed on the double to get a decimal result.
+
+2) Explicit happen. 
+In (double)money / 100, money is printed double as an explicit. Therefore, the division is executed as a double, giving an exact decimal result.
+
+3) Explicit happen.
+In money / (double)100, money is printed double as an explicit. The division is executed in double format to get the correct decimal result.
+
+3.
+a) The `result` is the variable that stores the result of dividing `money` by 100. 
+So `result` would be 72, which is the result of 7245 / 100. This value is because the result of dividing money by 100 was stored in integer form.
+
+b)
+* Sample 1: The result of money / 100 is displayed as 0
+* Sample 2: The result of money / 100 is displayed as an integer. 72
+* Sample 3: The value of the result variable is displayed as 0
+* Sample 4: The value of the result variable is displayed as an integer.  72
+
+C)
+* In sample 1, I tried to output in floating point format using the %LF formatter, but the result of 'money / 100' is in integer format. Therefore, it makes coercion to floating point, resulting in a decimal value with a rounding error.
+* In Sample 3, I tried to output in floating point format using the %lf formatter. However, the result variable is already stored as an integer value (see answer choice A), so casting it to floating point does not change the result.
+* The reason that samples 1 and 3 do not work as expected is because the formatting specifier in the printf function and the data format of the output value do not match. The printf function requires an exact match between the formatting specifier and the data format in order to be correctly represented.

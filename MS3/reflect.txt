@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Milestone - #3
+Full Name  : Hanbi Gong
+Student ID#: 111932224
+Email      : hgong12@myseneca.ca
+Section    : NEE
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1. This milestone required you to create addiFonal funcFons that were not specified or provided for you. Briefly describe three funcNons you created and include the purpose and value those funcFons contributed towards the applicaFon. Organize your answer for each funcFon by first including the funcFon prototype (not the definiFon) followed by your explanaFon. (Minimum: 300 words)
+-> Creating more functions in a clinic's system is a big improvement. The first function, 'Show All Appointments (viewAllAppointments),' displays a list of every appointment in the clinic. It's like a big planner showing all the events. This helps the clinic staff by giving them a complete view of everything happening. This way, they can plan better and use their time and resources well. It's like having a main plan for all appointments, making it easier to manage everyone's time and schedule.
+
+The 'Daily Appointment Viewer (viewAppointmentSchedule)' is different compared with first function. It looks at one day at a time, kind of like a daily to-do list. It helps the staff by showing what's planned for a specific day. This way, they can get ready for each day's appointments. It's like a daily planner that helps them prepare for what's coming up each day.
+
+Then there is a 'Add New Appointments (addAppointment).' This function is the most important function because it lets the clinic create new appointments, just like adding more dates to a calendar. It helps the clinic shows the new spaces by making space for new appointments for patients. By doing this, the clinic can help more patients and keep things organized. It's like making room for more appointments to help more people.
+
+As a result, these functions work to help the clinic staff can see everything scheduled (viewAllAppointments), organize daily plans (viewAppointmentSchedule), and create new appointments (addAppointment). These functions are like big-picture views and daily plans, allowing the team to manage time better, plan ahead, and help more patients efficiently. They make sure everyone knows what's happening, gets ready for each day, and can add more appointments when needed. This helps the clinic team member be more efficient and helps more patients get the care they need.
+
+2. If you coded your soluFon correctly, there should be at most only one “scanf” funcFon call in the client.c source code file – explain why the number of scanf funcFon calls were purposely and significantly minimized in this module. (Minimum: 150 words)
+-> Firstly, scanf can get messy. It directly takes in what the user types, and if they put in something unexpected (like the wrong type of info or weird symbols), things can go wrong. By using it less, we make the code tougher and less likely to crash from unexpected input.
+
+Secondly, using scanf less makes the code simpler and easier to manage. Each part of the code has its own job and deals with specific input. This makes the code easier to read and change without messing up other parts.
+
+Thirdly, using scanf sparingly is just good practice. It helps keep things organized and separate. Each function focuses on one thing—like handling patient info or managing appointments—making the code easier to understand and maintain.
+
+Lastly, using scanf less makes it easier to create reusable and testable code. We get better control over input, which means we can check and handle errors more precisely. That leads to a program that's more solid and dependable.
+
+3. In quesFon one above you idenFfied three funcFons you created. For each funcFon, explain what module you placed it in and why? What factors and consideraFons contributed towards your decision? 
+-> Firstly, Show All Appointments (viewAllAppointments). This function is placed in the "Appointment Management" section.It's about seeing every appointment. Placing it here helps keep track of all appointments together. This way, the staff can see all the plans at once, making it easier to organize everything about appointments.
+
+Secondly, Daily Appointment Viewer (viewAppointmentSchedule). Also in the "Appointment Management" part. This function shows appointments for just one day. Keeping it with the other appointment tools helps the staff plan for each day separately. It's like having a daily planner within the larger appointment organizer.
+
+Lastly, Add New Appointments (addAppointment). Module Placement: Also in the "Appointment Management" section. This function helps create new appointments. Placing it here with other appointment-related tools means all appointment stuff is in one place. It's like having a spot for making new appointments within the appointment organization area.
+
+The decision to place these functions together considers making it easy for staff to find and use appointment-related tools. By keeping them in one section, it's simpler to manage appointments, plan for different timeframes (daily or overall), and create new appointments without having to look around different parts of the system.
+

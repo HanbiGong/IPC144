@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #7
+Full Name  : Hanbi Gong
+Student ID#: 111932224
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Were you successful in coding non-repetitive sections of logic in the game play portion of this workshop (drawing of the ruler, board, player position, etc.)? If so, how did you accomplish this (don’t provide your code in your answer)? If not, why? Explain precisely what you struggled with and refer to the logic of the workshop to justify your answer.
+-> I accomplished player movement and game state updates using if statements and logical operators. For board display and formatting, I utilized loops to print different characters based on the state of each cell. In user input parts, I used the scanf function and checked the validity of the input, repeating the process until I received a correct input. Also, I used a way to show where things are in the list. First, I changed some numbers to show the spots. Then, I filled the empty spots and put a 'V' at the end.
+
+2. Explain how the use of structures simplified your program. Provide proof of your argument by contrasting the alternatives – do not include code in your answer – you must explain in simple terms the impact the concept of structures has in our programming strategies.
+-> Using structures helps bundle related data together, making the program more straightforward and easier to understand. For instance, if we represent player information using one structure, it allows us to handle details like lives, symbols, treasures, and history all within a single variable. Without structures, managing individual variables separately can lead to confusion about their relationships and even result in naming conflicts. That's why structures are essential tools that simplify programming and enhance clarity.
+
+3. Examine your code and determine the maximum number of levels of nesting (deepest) you ended up using in your program logic. Provide a simple indented outline that illustrates your answer (copy only the construct line for each level and do not include all the code within unless there is another nested construct). For example, two levels of nesting as an outline:
+-> The maximum number of levels of nesting in my workshop is 3.
+
+do {
+    // Level 1 begins
+    for (int y = 0; y < Game.Length; y++) {
+        // Level 2 begins
+        if (recentPosition[y] == 'V') {
+            // Level 3 begins
+            count++;
+        }
+        // Level 2 ends
+    }
+    // Level 1 ends
+} while (condition);
+
+This code contains a do-while loop at nesting level 1, an inner for loop at nesting level 2, and an if statement at nesting level 3. 

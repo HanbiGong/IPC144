@@ -1,0 +1,9 @@
+1. Do you have any previous programming experience? 
+   If so, what language(s)? If not, what are your initial thoughts about the C language and this course? 
+=> I do not have any experience about doing programming. I feel difficulty during the class. However, I heard that C language has a long history. So I prefer to learn C language because I can find the more things in the books.
+
+2.Describe your understanding of the compiling process of turning a C text file into an executable program. 
+=>To create a program, you must first create a source file. A source file is a document written in C, so we need to turn it into a language that the computer understands. The process of turning source files into machine language is called compilation.
+
+3.What do you hope to achieve in this course? Describe your goals and expectations. 
+=> Actually, it is my first time to learn computer language. So I want to get the basic thesis during the class. After class, I can use this knowledge for more difficult computer language like C++. 

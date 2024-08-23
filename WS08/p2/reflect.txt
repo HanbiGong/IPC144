@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Hanbi Gong
+Student ID#: 111932224
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Several helper functions were designed to return values in two different ways (via an argument and/or by return). Explain at least one benefit of this “feature” and how it increases usability/flexibility and at least one negative reason why having functions designed to work in this way may not be desirable.
+
+->	Using functions that can give back information in different ways is helpful because it gives developers more choices. They can pick the way that works best for their code and the situation they're working on. It's like having multiple tools in a toolbox, offering flexibility to adapt to different situations easily. But, this flexibility also brings some problems. With more choices, things can get complicated. It might make the code harder to understand and use, leading to mistakes. Imagine having many ways to do something simple—it can confuse and make things messy. So, while it's good to have options, too many options can make the code harder to work with and easier to mess up if not handled carefully.
+
+2. According to the design principles for structured design, functions should be highly cohesive and have low coupling. Identify one function in the workshop that demonstrates less than perfect cohesion, and one function that demonstrates coupling that could be improved. For each identified function, briefly explain what you would do to improve them.
+->	
+Function with Less Than Perfect Cohesion: "convertLbs"
+The "convertLbs" function currently tries to handle two different tasks within a single function: converting pounds to kilograms and grams. This combines unrelated operations, reducing the cohesion of the function. To enhance clarity and maintainability, it's better to separate these tasks into two distinct functions: "convertLbsToKilograms" and "convertLbsToGrams."
+
+Function with Coupling that Could Be Improved: "calculateReportData"
+The "calculateReportData" function heavily depends on other functions ("convertLbsKg," "convertLbsG," "calculateServings," "calculateCostPerServing," and "calculateCostPerCal") to perform its calculations. There are solution to improve its coupling. FIrstly, Dependency Injection: Instead of directly calling other functions within "calculateReportData," pass the necessary data as arguments. For instance, let the caller calculate the weight in kilograms and grams before passing it to "calculateReportData.". Secondly, Break Down Calculations: Instead of having "calculateReportData" handle multiple diverse calculations, split them into smaller, more specialized functions. For example, separate functions for converting weights and calculating costs or servings would make the code more manageable and less interdependent.
+By making these changes, each function will have a clearer purpose and be less reliant on external functions, making the code more readable, maintainable, and easier to modify or extend in the future.
+
+3. What advantages are there in passing structures to functions? Based on your readings this week (for next week’s topics) what could be done in the passing of this data to functions to make it more efficient? Explain how the “displayCatfoodData” function could be improved.
+-> 	Using structures in functions helps organize lots of information together, making it easier to understand and work with. Instead of putting data separately, we can package them all in one and send that package to a function. It's like putting all related things in a single box, making it simpler to handle and use.To make the "displayCatfoodData" function better, we can pass the entire "CatFoodInfo" package directly to it, instead of sending each piece of info one by one. This makes the code easier to read because we don't have to handle separate bits of data. Also, by making sure the function doesn't change the data, using something called constants, we make our code safer and more reliable.

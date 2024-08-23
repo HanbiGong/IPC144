@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Hanbi Gong
+Student ID#: 111932224
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Why are there three types of iteration constructs if we can make any one of them behave the same way? Refer to your code in this workshop to help backup your answer (do NOT include the code in your answer). Typically, when working with arrays, there is one iteration construct we favour – what is it and explain why it is more preferred over the other options.
+-> There are different type of loops like do While, and for Loop. A do-where loop is useful where the code in the loop must be executed at least once and there is no fixed number of times to repeat. The for loop is used when the number of iterations is clearly given because it clearly represents repetition operations. Therefore, a for loop is suitable for certain iterations.
+
+2. Describe what you did to both test and debug your program. How did you go about finding where the problems were located (explain how you did this for both syntactic and semantic problems)?
+-> For me, I usually compile a one-paragraph code and check errors in the code by compiling it in the visual studio. I often get an error because I usually miss {,}. So I often look at where the loop started from again. And sometimes when I confused about the loop, go to the tab on the seneca blackboard and look for things on the introduction C tab.  
+
+3. When attempting to submit your work, you receive the following error feedback from the submitter:
+Using the above explicit information, explain each step you must take to successfully identify and fix your error.
+-> In this case, it can be found that there is an error in line 6. In addition, "Enter your monthly NET~", I can guess that the answer was written using the scanf function. Therefore, it is likely to be corrected after reconfirming that the variables in the scanf function are well put.
